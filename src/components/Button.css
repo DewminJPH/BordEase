@@ -10,10 +10,19 @@
   outline: none;
   border: none;
   cursor: pointer;
+  gap: 8px;
+}
+.edit-icon{
+  width: 20px;
+  height: 20px;
+  color: #fff;
 }
 .btn:hover{
   background-color: #9d774c !important;
   transition: scale(1.02);
+}
+.btn:hover .edit-icon{
+  color: #fff;
 }
 .btn--primary{
   background-color: var(--primary);

@@ -1,7 +1,8 @@
-import React,{useState} from 'react'
+import React,{useState ,useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';  
+import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'; 
+import {HugeiconsIcon, Edit03Icon} from '@hugeicons/react';
 import './Navbar.css';
 import { Button } from './Button';
 
@@ -19,6 +20,8 @@ function Navbar() {
     }
   };
 
+  useEffect(() => {showButton()}, []);
+
   window.addEventListener('resize', showButton);
 
   return (
@@ -26,7 +29,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-container">
           
-          <Link to="/" className="navbar-logo" > 
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}> 
             BOARDEASE
           </Link>
           

@@ -1,0 +1,129 @@
+.hero-container{
+  position: relative;
+  background: url('../Assets/image 6.png') center center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5%;
+  object-fit:contain; 
+}
+.hero-overlay-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 550px; 
+  height: 80vh; 
+  background:linear-gradient(to right, 
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%); 
+  z-index: 1; 
+}
+.hero-content > h1 {
+    position: relative;
+    color: #fff;
+    font-size: clamp(30px, 5vw, 40px);
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-family: 'linden hill', sans-serif;
+    z-index: 2;
+    line-height: 1.2;
+}
+
+.hero-content > p {
+    position: relative;
+    color: #fff;
+    font-size: clamp(5px, 2.5vw, 18px);
+    text-align: left;
+    margin-top: 20px;
+    max-width: 800px;
+    line-height: 0.6;
+    z-index: 2;
+}
+.hero-content > p:last-child {
+    margin-bottom: -250px;
+} 
+
+@media(max-width: 768px) {
+  .hero-container {
+    padding-left: 8%;
+  }
+  .hero-overlay-left {
+    width: 15%;
+  }
+  .hero-content > h1 {
+    font-size: 160%;
+  }
+  .hero-content > p {
+    font-size: 80%;
+  }
+}
+
+.sorting-strip{
+  position:absolute;
+  bottom:-50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  height:100px;
+  background:white;
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba (0,0,0,0.1);
+  z-index:3;
+  overflow:hidden;
+  border: 1px solid #aaaaaa;
+}
+
+.sorting-segment{
+  flex:1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 1px solid #eee;
+}
+
+.sorting-segment span{
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.sorting-segment .subtext{
+  color: #666;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.sorting-segment.search{
+  background: #113E21;
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.sorting-segment.search span{
+  color:white;
+  font-size: 16px;
+}
+
+@media(max-width:768px){
+  .sorting-strip{
+    height: 80px;
+    width: 95%;
+    bottom: -40px;
+    flex-wrap: wrap;
+  }
+  .sorting-segment{
+    flex: 1 0 50%;
+    border-bottom: 1px solid #eee;
+  }
+  .sorting-segment:nth-child(4){
+    border-right:1px solid #eee;
+  }
+}
