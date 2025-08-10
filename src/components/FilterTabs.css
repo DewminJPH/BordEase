@@ -1,0 +1,57 @@
+.filter-tabs-container {
+  display: grid;
+  gap: 24px; 
+  padding: 12px 0;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0; 
+  margin-top: 270px;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.filter-tab {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  cursor: default; 
+  position: relative;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  flex:1;
+}
+
+.filter-tab:hover {
+  color: #113E21;
+  margin-bottom: -2px;
+}
+.filter-tab:hover:not(.no-hover){
+  color: #113E21;
+}
+.filter-tab.no-hover {
+  pointer-events: none;
+}
+.filter-tab:first-child {
+  color: #113E21;
+  border-bottom: 2px solid #113E21;
+  padding-bottom: 8px;
+}
+.filter-tab:nth-child(2){
+  border-bottom: 2px solid #d7d7d7;
+  padding-bottom: 8px;
+} 
+.filter-tab:nth-child(3){
+  color:#B38B59;
+} 
+
+.filter-tab:nth-child(4){
+  border-bottom: 2px solid #d7d7d7;
+  padding-bottom: 8px;
+} 
+.filter-tab:nth-child(5){
+  border-bottom: 2px solid #d7d7d7;
+  padding-bottom: 8px;
+} 
+
