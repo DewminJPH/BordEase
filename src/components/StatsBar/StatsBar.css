@@ -55,7 +55,8 @@
 }
 .stat-icon{
   flex-shrink: 0;
-  margin-right: 8px;
+  margin-left:30px;
+  margin-right: 1px;
   transition: transform 0.3s ease;
 }
 .stat-icon:hover {
