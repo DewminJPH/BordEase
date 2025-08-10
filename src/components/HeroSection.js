@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import './HeroSection.css';
 import backgroundImage from '../Assets/image 6.png';
+import StatsBar from './StatsBar/StatsBar';
 
 function HeroSection() {
   return(
@@ -33,6 +34,16 @@ function HeroSection() {
           <div className="sorting-segment search">
             <span>Search</span>
           </div>
+        </div>
+        <div className="stats-container">
+          <StatsBar 
+            stats={[
+              { number: '1,000+', label: 'Home listing available' },
+              { number: '1M', label: 'Monthly visitors' },
+              { number: '50,000+', label: 'Feedbacks' },
+              { number: '#1', label: 'Website Rank' }
+            ]}
+          />
         </div>
     </div>
   )

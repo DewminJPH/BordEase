@@ -127,3 +127,12 @@
     border-right:1px solid #eee;
   }
 }
+
+.stats-container {
+  position: absolute;
+  bottom: -220px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  z-index: 3;
+}
