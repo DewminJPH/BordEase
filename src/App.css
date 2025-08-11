@@ -18,7 +18,6 @@
 }
 
 .services {
-  /* background-image: url('/images/img-2.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +26,6 @@
 }
 
 .explore {
-  /* background-image: url('/images/img-1.jpg'); */
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -36,7 +34,6 @@
 }
 
 .login {
-  /* background-image: url('/images/img-8.jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
