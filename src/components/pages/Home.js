@@ -5,6 +5,7 @@ import FilterTabs from '../FilterTabs';
 import PropertyCards from '../PropertyList';
 import Services from '../Services';
 import Agents from '../Agents'
+import Feedback from '../Feedback';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <PropertyCards/>
       <Services/>
       <Agents/>
+      <Feedback/>
     </>
   );
 }

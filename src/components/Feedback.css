@@ -1,0 +1,87 @@
+.feedback-container{
+  position:relative;
+  height:500px;
+  width:100%;
+  margin-top:100px;
+  display:flex;
+}
+
+.circle{
+  width: 300px;
+  height: 300px;
+  top:55%;
+  left:1000px;
+  border-radius: 50%;
+  z-index: 1;
+  background-color:#d5af81;
+  position: absolute;
+}
+.rectangle{
+  width: 430px;
+  height: 100%; 
+  background-color: #113E21; 
+  position: absolute;
+  z-index:2;
+  right: 0;
+  border-radius:10px 0 0 10px;
+}
+.feedback-image{
+  position:absolute;
+  height: 75%;
+  width: 400px;
+  right: 230px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.feedback-content h5{
+  position: absolute;
+  font-size: 1rem;
+  margin-left:90px;
+  color: black;
+  font-weight: 200;
+  z-index: 3;
+}
+.feedback-content h3{
+  position: absolute;
+  font-size: 1.25rem;
+  margin-left:90px;
+  color: #B38B59;
+  font-weight: 600;
+  z-index: 3;
+  margin-top: 30px;
+}
+.symbol-quote{
+  position: absolute;
+  top: 25%;
+  left: 90px;
+}
+.feedback-content p.feedback{
+  position: absolute;
+  font-size: 1rem;
+  margin-left:190px;
+  color: black;
+  font-weight: 200;
+  z-index: 3;
+  top: 40%;
+  width: 500px;
+}
+.client-image{
+  position: absolute;
+  top: 70%;
+  left:90px;
+}
+
+.client-name{
+  position: absolute;
+  top: 74%;
+  left: 210px;
+  font-size: medium;
+}
+.reg-no{
+  position: absolute;
+  top: 80%;
+  left: 210px;
+  font-size: small;
+}
