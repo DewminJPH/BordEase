@@ -13,7 +13,7 @@
   left:1000px;
   border-radius: 50%;
   z-index: 1;
-  background-color:#d5af81;
+  background-color:#e9c293;
   position: absolute;
 }
 .rectangle{
@@ -70,18 +70,18 @@
 .client-image{
   position: absolute;
   top: 70%;
-  left:90px;
+  left:190px;
 }
 
 .client-name{
   position: absolute;
   top: 74%;
-  left: 210px;
+  left: 310px;
   font-size: medium;
 }
 .reg-no{
   position: absolute;
   top: 80%;
-  left: 210px;
+  left: 310px;
   font-size: small;
 }

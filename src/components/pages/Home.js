@@ -6,6 +6,7 @@ import PropertyCards from '../PropertyList';
 import Services from '../Services';
 import Agents from '../Agents'
 import Feedback from '../Feedback';
+import Footer from '../Footer';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <Services/>
       <Agents/>
       <Feedback/>
+      <Footer/>
     </>
   );
 }
