@@ -4,6 +4,7 @@ import HeroSection from '../HeroSection';
 import FilterTabs from '../FilterTabs';
 import PropertyCards from '../PropertyList';
 import Services from '../Services';
+import Agents from '../Agents'
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <FilterTabs />
       <PropertyCards/>
       <Services/>
+      <Agents/>
     </>
   );
 }
