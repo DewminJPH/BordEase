@@ -3,6 +3,7 @@ import '../../App.css';
 import HeroSection from '../HeroSection';
 import FilterTabs from '../FilterTabs';
 import PropertyCards from '../PropertyList';
+import Services from '../Services';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <HeroSection />
       <FilterTabs />
       <PropertyCards/>
+      <Services/>
     </>
   );
 }

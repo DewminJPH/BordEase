@@ -1,0 +1,149 @@
+.services-container {
+  position: relative;
+  height: 500px; 
+  width: 100%;
+  margin-top: 70px;
+  display:flex;
+}
+
+.green-rectangle {
+  width: 430px;
+  height: 100%; 
+  background-color: #113E21; 
+  position: relative;
+  left: 0;
+  border-radius: 0 4px 4px 0;
+}
+.move-right-arrow{
+  position: absolute;
+  margin-top:30px;
+  margin-left:300px;
+  z-index:3;
+}
+.move-left-arrow{
+  position:absolute;
+  margin-top:37px;
+  margin-left:260px;
+  z-index:4;
+}
+.overlay-image{
+  position:absolute;
+  height: 60%;
+  width: 500px;
+  left: 180px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.redcircle{
+  width: 65px;
+  height: 50px;
+  top:45%;
+  left:400px;
+  border-radius: 10%;
+  z-index: 3;
+  background-color:rgb(140, 10, 10);
+  position: absolute;
+}
+.triangle{
+  width: 0px;
+  height: 0px;
+  top:47%;
+  left:420px;
+  border-top: 15px solid transparent;
+  border-left: 30px solid white;
+  border-bottom: 15px solid transparent; 
+  z-index: 4;
+  position: absolute;
+}
+.text-content {
+  position: absolute;
+  left: 190px; 
+  top: calc(50% + 30% + 20px); 
+  width: 500px; 
+}
+.text-content h2 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color:#fff;
+}
+
+.inline-group {
+  display: flex;
+  align-items: baseline; 
+  gap: 20px; 
+  margin-bottom: 16px; 
+}
+
+.inline-item {
+  margin: 0 !important; 
+  white-space: nowrap; 
+}
+
+.inline-group p {
+  font-size: 18px;
+  color: #fff;
+}
+
+.inline-group h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color:#113E21;
+}
+.services-content{
+  position:absolute;
+  padding: 40px;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services-content h5{
+  position: absolute;
+  font-size: 1rem;
+  margin-left:790px;
+  color: black;
+  font-weight: 200;
+  z-index: 3;
+  margin-top:-450px;
+}
+.services-content h3{
+  position: absolute;
+  font-size: 1.25rem;
+  margin-left:790px;
+  color: #B38B59;
+  font-weight: 600;
+  z-index: 3;
+  margin-top:-380px;
+}
+.services-content h4 {
+  font-size: 1.25rem;
+  margin-left:890px;
+  color: black;
+  font-weight: 600;
+  z-index: 3;
+  margin-top:40px;
+}
+.services-content p {
+  width: 550px;
+  margin-left: 900px;
+}
+.services-content > * {
+  margin-left: 0;
+  padding-left: 0;
+}
+.save-time{
+  position:absolute;
+  margin-left:830px;
+  margin-top:-250px;
+}
+.map{
+  position:absolute;
+  margin-left:830px;
+  margin-top: 20px;
+}
+.verify{
+  position:absolute;
+  margin-left:830px;
+  margin-top: 290px;
+}
