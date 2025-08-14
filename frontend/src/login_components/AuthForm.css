@@ -40,6 +40,7 @@
   display: flex;
   gap: 30px;
   margin-bottom: 40px;
+
 }
 
 .auth-tab {
@@ -50,6 +51,7 @@
   color: #999;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 }
 
 .auth-tab.active {
@@ -88,9 +90,10 @@
 }
 
 .auth-submit-btn {
-  background: #B38B59;
+  background: #113E21;
   color: white;
   border: none;
+  text-align:center;
   padding: 15px;
   font-size: 1rem;
   font-weight: 600;
@@ -98,12 +101,17 @@
   cursor: pointer;
   margin-top: 20px;
   transition: background 0.3s ease;
+  text-decoration:none;
 }
 
 .auth-submit-btn:hover {
-  background: #946f42;
+  background: #0f351c;
 }
+.errormessage{
+  color:rgb(233, 44, 44);
+  font-size:small;
 
+}
 
 @media (max-width: 768px) {
   .auth-container {
