@@ -1,11 +1,13 @@
 import React from 'react';
 import './AuthForm.css';
 import loginImage from '../Assets/login.png';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {useForm} from "react-hook-form";
 import axios from "axios";
 
 const AuthForm = () => {
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
@@ -16,16 +18,20 @@ const AuthForm = () => {
     console.log(data);
     try{
       const response = await axios.post(
-        "http://localhost:3000/api/auth/login",
-        data
+        "http://localhost:3001/api/auth/login",
+        data,{
+          withCredentials:true
+        }
       );
       if(response.status == 201){
         alert("Login Successfull!");
+        navigate("/dashboard");
       }
     }catch(error){
       console.log(error);
+      alert(error);
     }
-  };
+  }
 
   return (
     <div className="auth-wrapper">
@@ -48,17 +54,22 @@ const AuthForm = () => {
             </div>
           </div>
 
-          <form className="auth-form">
+          <form onSubmit={handleSubmit(submitCall)} className="auth-form">
             <div className="form-group">
+              
               <input
                 type="text"
                 placeholder="Username"
                 className="auth-input"
                 {...register("username",{
                   required:"Username is required",
+                  minLength:{
+                    value:3,
+                    message:"username must be at least 3 characters"
+                  },
                 })}
               />
-              {errors.username && (<div classname="errormessage">{errors.username.message}</div>)}
+              {errors.username &&<div className="errormessage">{errors.username.message}</div>}
             </div>
             
             
@@ -68,16 +79,20 @@ const AuthForm = () => {
                 placeholder="Password"
                 className="auth-input"
                 {...register("password",{
-                  required:"Password is not correct"
+                  required:"Password is required",
+                  minLength:{
+                    value:6,
+                    message:"Password must be at least 6 characters",
+                  },
                 })}
               />
-              {errors.password && (<div classname="errormessage">{errors.password.message}</div>)}
+              {errors.password &&<div className="errormessage">{errors.password.message}</div>}
             </div>
             
             
-            <Link to="/login/dashboard" type="submit" className="auth-submit-btn">
+            <button type="submit" className="auth-submit-btn">
               Login
-            </Link>
+            </button>
           </form>
         </div>
       </div>

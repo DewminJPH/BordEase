@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, useNavigate} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './AuthForm.css';
 import SignupImage from '../Assets/signup.png';
 import {useForm} from "react-hook-form";
@@ -16,7 +16,7 @@ const AuthForm = () => {
   const submitCall = async (data) => {
     console.log(data);
     try{
-      const response = await axios.post("http://localhost:3000/api/auth/register",data)
+      const response = await axios.post("http://localhost:3001/api/auth/register",data)
       if(response.status==201){
         alert("Registration Successfull")
       }

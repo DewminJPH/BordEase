@@ -11,12 +11,12 @@ function App() {
   return (
     <>
       <Router>
-          <Navbar />
+            <Navbar />
           <Routes>
             <Route path="/" exact element = {<Home/>}/>
             <Route path="/login" element = {<Login/>}/>
             <Route path="/signup" element= {<Signup/>}/>
-            <Route path="/login/dashboard" element = {<Dashboard/>}/>
+            <Route path="/dashboard" element = {<Dashboard/>}/>
           </Routes>
         </Router>   
     </>
