@@ -1,0 +1,85 @@
+.ad-card {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow-sm);
+}
+
+.ad-card-left img {
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.ad-card-right { display: flex; flex-direction: column; gap: 6px; }
+
+.ad-card-top { display: flex; align-items: flex-start; gap: 12px; }
+
+.ad-card-title { margin: 0; font-size: 1.2rem; font-weight: 500; color: var(--text); }
+
+.ad-card-rail { margin-left: auto; display: flex; align-items: center; gap: 1px; }
+
+/* Stars */
+.ad-stars .star { font-size: 18px; line-height: 1; }
+.star--full { color: var(--star); }
+.star--empty { color: var(--star-empty); }
+
+.ad-reviews-link {
+  color: #6b7280;
+  font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ad-reviews-link:hover { color: #374151; }
+
+/* Hover actions */
+.ad-actions-hover {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.ad-card:hover .ad-actions-hover { opacity: 1; }
+
+/* Info rows */
+.ad-meta-row {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 24px;
+  color: var(--muted);
+  font-size: .95rem;
+  margin-top: 1px;
+}
+.ad-meta-row b { margin-left: 6px; color: var(--text); }
+
+.ad-info-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px;
+  align-items: baseline;
+  color: var(--text);
+}
+.ad-info-row .label { color: var(--muted); }
+.ad-info-row a { color: #4f46e5; text-decoration: underline; }
+.ad-info-row a:hover { color: #4338ca; }
+
+/* Price/time */
+.ad-price-row { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; }
+.ad-price { color: var(--price); font-weight: 700; }
+.ad-timeago { color: var(--muted); font-size: .9rem; }
+
+/* Responsive for cards */
+@media (max-width: 720px) {
+  .ad-card { grid-template-columns: 1fr; }
+  .ad-card-left img { width: 100%; height: 180px; }
+  .ad-meta-row { grid-template-columns: 1fr; gap: 6px; }
+  .ad-info-row { grid-template-columns: 1fr; }
+  .ad-card-rail { margin-left: 0; }
+}

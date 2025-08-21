@@ -1,0 +1,68 @@
+/* Common global styles + variables used by all components */
+*, *::before, *::after { box-sizing: border-box; }
+
+:root {
+  --brand-accent: #b68a57;
+  --btn-bg: #0e3b24;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --field-bg: #f3f4f6;
+  --error: #b91c1c;
+  --success: #059669;
+  --price: #16a34a;
+  --star: #facc15;
+  --star-empty: #d1d5db;
+  --radius: 8px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.03);
+  --shadow-md: 0 3px 12px rgba(0,0,0,0.05);
+  --shadow-lg: 0 10px 30px rgba(0,0,0,.25);
+}
+
+body { color: var(--text); }
+
+.dashboard-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.form-title {
+  color: var(--brand-accent);
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+
+/* List section header and container */
+.ads-title {
+  margin-top: 28px;
+  color: var(--brand-accent);
+  font-size: 26px;
+}
+.ads-list { margin-top: 10px; }
+.no-ads {
+  color: #9ca3af;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Alerts */
+.error-message { color: var(--error); margin: 0 0 10px; }
+.success-message { color: var(--success); margin: 0 0 10px; }
+
+/* Generic small button (used in cards + cancel) */
+.btn {
+  background: #eef2ff;
+  color: #1f2937;
+  border: 1px solid #c7d2fe;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: .9rem;
+  transition: opacity .15s ease, transform .05s ease;
+}
+.btn:hover { opacity: .9; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn--edit { background: #fef3c7; border-color: #fde68a; }
+.btn--delete { background: #fee2e2; border-color: #fecaca; }
+.btn--save { background: var(--btn-bg); color: #fff; border-color: var(--btn-bg); }
